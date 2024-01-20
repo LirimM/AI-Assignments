@@ -1,4 +1,4 @@
-# AI Problem Solving Repository - Artificial Intelligence" course in the Computer Engineering Master's Program (23/24) at the [University of Prishtina](https://fiek.uni-pr.edu).
+# AI Problem Solving Repository - "Artificial Intelligence" course in the Computer Engineering Master's Program (23/24) at the [University of Prishtina](https://fiek.uni-pr.edu).
 
 ## Table of Contents
 1. [N Queens with A* Algorithm](#n-queens)
