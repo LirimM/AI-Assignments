@@ -63,6 +63,4 @@ This repository's contributors are:
 
 This assignment was completed as part of the "Artificial Intelligence" course in the Computer Engineering Master's Program (23/24) at the University of Prishtina. Adrian Ymeri (Supervisor and Teaching Assistant) provided guidance and support throughout the project. You can find Adrian Ymeri's GitHub profile [here](https://github.com/adrianymeri).
 
-For any questions you might have, feel free contact us or the supervisor.
-
 ---
