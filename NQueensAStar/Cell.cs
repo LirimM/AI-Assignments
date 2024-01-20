@@ -17,5 +17,18 @@
         {
             return (Level + Heuristic).CompareTo(other.Level + other.Heuristic);
         }
+
+        public void Print()
+        {
+            Console.Write($"Level {Level}, Heuristic: {Heuristic}");
+            Console.Write(" State: ");
+
+            foreach (var item in State)
+            {
+                Console.Write($"{item} ");
+            }
+
+            Console.WriteLine();
+        }
     }
 }

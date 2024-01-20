@@ -24,13 +24,7 @@
 
             while (priorityQueue.Count > 0)
             {
-                priorityQueue.Print();
-
                 Cell current = priorityQueue.Dequeue();
-
-                //Check admissibility for the current node
-                int heuristic = CalculateHeuristic(current.State);
-                IsAdmissibleHeuristic(current.State, heuristic);
 
                 if (current.Level == n)
                 {
@@ -46,6 +40,10 @@
                     if (CanPlace(childState, current.Level))
                     {
                         Cell child = new Cell(childState, current.Level + 1, CalculateHeuristic(childState));
+
+                        child.Print();
+                        IsAdmissibleHeuristic(childState, CalculateHeuristic(childState));
+
                         priorityQueue.Enqueue(child);
                     }
                 }
@@ -117,7 +115,7 @@
                 }
             }
 
-            Console.WriteLine("Heuristic is admissible!");
+            Console.WriteLine("Heuristic is admissible! \n");
             return true;
         }
     }

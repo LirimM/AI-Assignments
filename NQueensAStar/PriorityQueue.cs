@@ -23,6 +23,7 @@
             elements.RemoveAt(0);
             return item;
         }
+
         public static void PrintQueens(int[] queens)
         {
             Console.WriteLine("Solution:");
@@ -35,27 +36,5 @@
                 Console.WriteLine();
             }
         }
-
-        public void Print()
-        {
-            Console.WriteLine("\n\nStart");
-
-            foreach (var item in elements)
-            {
-                Console.WriteLine("\nLevel " + item.Level);
-
-                Console.WriteLine("Heuristic " + item.Heuristic);
-
-                foreach (var itm in item.State)
-                {
-                    Console.Write(itm + ", ");
-
-                }
-                Console.WriteLine();
-
-                PrintQueens(item!.State);
-            }
-        }
-
     }
 }
